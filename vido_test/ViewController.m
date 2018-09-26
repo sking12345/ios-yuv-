@@ -15,16 +15,20 @@
 
 
 @interface ViewController ()  <AVCaptureVideoDataOutputSampleBufferDelegate>
-@property(nonatomic, strong) AVCaptureSession *captureSession;
-@property (weak, nonatomic) IBOutlet UIImageView *img_view;
-@property (weak, nonatomic) IBOutlet UIButton *btn;
-
+    @property(nonatomic, strong) AVCaptureSession *captureSession;
+    @property (weak, nonatomic) IBOutlet UIImageView *img_view;
+    @property (weak, nonatomic) IBOutlet UIButton *btn;
+    @property (weak, nonatomic) IBOutlet UITextField *label_test;
 @end
+
+
+@implementation ViewController
 
 int count = 0;
 BOOL btn_clik = false;
 threadpool_t pool;
 int conect_fd = 0;
+ViewController *view=nil;
 struct _data
 {
     size_t len;
@@ -40,34 +44,32 @@ void* mytask(void *arg)
     data->data = NULL;
     free(data);
     data = NULL;
-    
     return NULL;
 }
 
 void connect_server()
 {
-    const char *host = "172.20.10.5";
-    int  port= 8002;
-    struct sockaddr_in server_addr;
-    server_addr.sin_family = AF_INET;
-    server_addr.sin_port = htons(port);
-    server_addr.sin_addr.s_addr = inet_addr(host);
-    bzero(&(server_addr.sin_zero),8);
-    conect_fd = socket(AF_INET, SOCK_STREAM, 0);
-    if(conect_fd<0)
-    {
-        perror("socket error");
-        return ;
-    }
-    if(connect(conect_fd,(struct sockaddr *)&server_addr, sizeof(struct sockaddr_in)) == -1)
-    {
-        perror("connect error");
-    }
+//    const char *host = "172.20.10.5";
+//    int  port= 8002;
+//    struct sockaddr_in server_addr;
+//    server_addr.sin_family = AF_INET;
+//    server_addr.sin_port = htons(port);
+//    server_addr.sin_addr.s_addr = inet_addr(host);
+//    bzero(&(server_addr.sin_zero),8);
+//    conect_fd = socket(AF_INET, SOCK_STREAM, 0);
+//    if(conect_fd<0)
+//    {
+//        perror("socket error");
+//        return ;
+//    }
+//    if(connect(conect_fd,(struct sockaddr *)&server_addr, sizeof(struct sockaddr_in)) == -1)
+//    {
+//        perror("connect error");
+//    }
+    [view change_val];
     return;
 }
 
-
-@implementation ViewController
 
 
 
@@ -76,8 +78,14 @@ void connect_server()
     [self setcupSession];
     [self setupInput];
     [self setupOutput];
+    view = self;
     connect_server();
-    // Do any additional setup after loading the view, typically from a nib.
+    
+}
+
+-(void)change_val
+{
+    NSLog(@"test...");
 }
 
 //#FF00FF
@@ -86,15 +94,16 @@ void connect_server()
     // Dispose of any resources that can be recreated.
 }
 
+
+
 -(void)start{
-    
-    threadpool_init(&pool, 1);
-    [_captureSession startRunning];
+//    threadpool_init(&pool, 1);
+//    [_captureSession startRunning];
 }
 
 -(void)stop{
-    threadpool_destroy(&pool);
-     [_captureSession stopRunning];
+//    threadpool_destroy(&pool);
+//     [_captureSession stopRunning];
 }
 
 - (IBAction)btn_click:(id)sender {
@@ -194,14 +203,6 @@ void connect_server()
         }
        UV+=row1;
     }
-
-
-//    unsigned char *y_frame = CVPixelBufferGetBaseAddressOfPlane(imageBuffer, 0);
-//    memcpy(yuv_frame, y_frame, y_size);
-//    unsigned char *uv_frame = CVPixelBufferGetBaseAddressOfPlane(imageBuffer, 1);
-//    memcpy(yuv_frame + y_size, uv_frame, uv_size);
-    
-    
     struct _data *p_data = (struct _data*)malloc(sizeof(struct _data));
     p_data->data = yuv_frame;
     p_data->len = uv_size + y_size;
