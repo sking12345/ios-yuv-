@@ -62,6 +62,7 @@
                     </view>
                     <connections>
                         <outlet property="btn" destination="6w9-Vg-IfH" id="7Kg-HN-oCK"/>
+                        <outlet property="img_vew1" destination="mEl-Qy-EOa" id="M3D-jT-AwS"/>
                         <outlet property="img_view" destination="Q6t-Z1-tck" id="LjF-dX-8Lp"/>
                         <outlet property="label_test" destination="abU-To-Ip8" id="5Dy-Gf-vSb"/>
                     </connections>

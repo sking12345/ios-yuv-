@@ -15,6 +15,21 @@
 		95298793215A159600F9681F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95298792215A159600F9681F /* main.m */; };
 		952987A1215A465100F9681F /* condition.c in Sources */ = {isa = PBXBuildFile; fileRef = 9529879F215A465100F9681F /* condition.c */; };
 		952987A4215A468C00F9681F /* threadpool.c in Sources */ = {isa = PBXBuildFile; fileRef = 952987A2215A468C00F9681F /* threadpool.c */; };
+		95AB43CF215CE2BB0029D600 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95AB431D215CBBA30029D600 /* libavcodec.a */; };
+		95AB43D0215CE2BB0029D600 /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95AB4321215CBBA30029D600 /* libavdevice.a */; };
+		95AB43D1215CE2BB0029D600 /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95AB4323215CBBA30029D600 /* libavfilter.a */; };
+		95AB43D2215CE2BB0029D600 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95AB431E215CBBA30029D600 /* libavformat.a */; };
+		95AB43D3215CE2BB0029D600 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95AB4322215CBBA30029D600 /* libavutil.a */; };
+		95AB43D4215CE2BB0029D600 /* libpostproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95AB431C215CBBA30029D600 /* libpostproc.a */; };
+		95AB43D5215CE2BB0029D600 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95AB431F215CBBA30029D600 /* libswresample.a */; };
+		95AB43D6215CE2BB0029D600 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95AB4320215CBBA30029D600 /* libswscale.a */; };
+		95AB43D7215CE2BB0029D600 /* libx264.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95AB4324215CBBA30029D600 /* libx264.a */; };
+		95AB43DB215CE3110029D600 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 95AB43DA215CE3110029D600 /* libbz2.tbd */; };
+		95AB43DD215CE31F0029D600 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 95AB43DC215CE31F0029D600 /* libiconv.tbd */; };
+		95AB43DF215CE32C0029D600 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 95AB43DE215CE32C0029D600 /* libz.tbd */; };
+		95AB43E0215CE3400029D600 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95AB43B9215CDA580029D600 /* VideoToolbox.framework */; };
+		95AB43E2215CE34C0029D600 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95AB43E1215CE34C0029D600 /* CoreGraphics.framework */; };
+		95AB43E4215CE3550029D600 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95AB43E3215CE3550029D600 /* CoreMedia.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +47,35 @@
 		952987A0215A465100F9681F /* condition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = condition.h; sourceTree = "<group>"; };
 		952987A2215A468C00F9681F /* threadpool.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = threadpool.c; sourceTree = "<group>"; };
 		952987A3215A468C00F9681F /* threadpool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = threadpool.h; sourceTree = "<group>"; };
+		95AB42D3215C91C80029D600 /* libx264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libx264.a; path = "../../../Downloads/x264/x264-iOS/lib/libx264.a"; sourceTree = "<group>"; };
+		95AB42D5215C96320029D600 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = ../../../Downloads/ffmpeg/thin/libs/libavformat.a; sourceTree = "<group>"; };
+		95AB42D6215C96330029D600 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = ../../../Downloads/ffmpeg/thin/libs/libavcodec.a; sourceTree = "<group>"; };
+		95AB42D7215C96330029D600 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = ../../../Downloads/ffmpeg/thin/libs/libavutil.a; sourceTree = "<group>"; };
+		95AB42D8215C96330029D600 /* libpostproc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpostproc.a; path = ../../../Downloads/ffmpeg/thin/libs/libpostproc.a; sourceTree = "<group>"; };
+		95AB42D9215C96330029D600 /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = ../../../Downloads/ffmpeg/thin/libs/libavdevice.a; sourceTree = "<group>"; };
+		95AB42DA215C96330029D600 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = ../../../Downloads/ffmpeg/thin/libs/libswscale.a; sourceTree = "<group>"; };
+		95AB42DB215C96330029D600 /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = ../../../Downloads/ffmpeg/thin/libs/libavfilter.a; sourceTree = "<group>"; };
+		95AB42DC215C96330029D600 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = ../../../Downloads/ffmpeg/thin/libs/libswresample.a; sourceTree = "<group>"; };
+		95AB42EA215C98220029D600 /* libx264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libx264.a; path = "../../../Downloads/x264/thin-x264/x86_64/lib/libx264.a"; sourceTree = "<group>"; };
+		95AB42EF215C9C1B0029D600 /* libx264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libx264.a; path = ../../ios.a/libx264.a; sourceTree = "<group>"; };
+		95AB42F1215C9C2A0029D600 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../ios.a/libcurl.a; sourceTree = "<group>"; };
+		95AB431C215CBBA30029D600 /* libpostproc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpostproc.a; path = vido_test/libs/libpostproc.a; sourceTree = "<group>"; };
+		95AB431D215CBBA30029D600 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = vido_test/libs/libavcodec.a; sourceTree = "<group>"; };
+		95AB431E215CBBA30029D600 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = vido_test/libs/libavformat.a; sourceTree = "<group>"; };
+		95AB431F215CBBA30029D600 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = vido_test/libs/libswresample.a; sourceTree = "<group>"; };
+		95AB4320215CBBA30029D600 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = vido_test/libs/libswscale.a; sourceTree = "<group>"; };
+		95AB4321215CBBA30029D600 /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = vido_test/libs/libavdevice.a; sourceTree = "<group>"; };
+		95AB4322215CBBA30029D600 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = vido_test/libs/libavutil.a; sourceTree = "<group>"; };
+		95AB4323215CBBA30029D600 /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = vido_test/libs/libavfilter.a; sourceTree = "<group>"; };
+		95AB4324215CBBA30029D600 /* libx264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libx264.a; path = vido_test/libs/libx264.a; sourceTree = "<group>"; };
+		95AB43B9215CDA580029D600 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		95AB43BB215CDC160029D600 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		95AB43D8215CE3050029D600 /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
+		95AB43DA215CE3110029D600 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		95AB43DC215CE31F0029D600 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		95AB43DE215CE32C0029D600 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		95AB43E1215CE34C0029D600 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		95AB43E3215CE3550029D600 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +83,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95AB43E4215CE3550029D600 /* CoreMedia.framework in Frameworks */,
+				95AB43E2215CE34C0029D600 /* CoreGraphics.framework in Frameworks */,
+				95AB43E0215CE3400029D600 /* VideoToolbox.framework in Frameworks */,
+				95AB43DF215CE32C0029D600 /* libz.tbd in Frameworks */,
+				95AB43DD215CE31F0029D600 /* libiconv.tbd in Frameworks */,
+				95AB43DB215CE3110029D600 /* libbz2.tbd in Frameworks */,
+				95AB43CF215CE2BB0029D600 /* libavcodec.a in Frameworks */,
+				95AB43D0215CE2BB0029D600 /* libavdevice.a in Frameworks */,
+				95AB43D1215CE2BB0029D600 /* libavfilter.a in Frameworks */,
+				95AB43D2215CE2BB0029D600 /* libavformat.a in Frameworks */,
+				95AB43D3215CE2BB0029D600 /* libavutil.a in Frameworks */,
+				95AB43D4215CE2BB0029D600 /* libpostproc.a in Frameworks */,
+				95AB43D5215CE2BB0029D600 /* libswresample.a in Frameworks */,
+				95AB43D6215CE2BB0029D600 /* libswscale.a in Frameworks */,
+				95AB43D7215CE2BB0029D600 /* libx264.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +109,7 @@
 			children = (
 				95298782215A159400F9681F /* vido_test */,
 				95298781215A159400F9681F /* Products */,
+				95AB42D2215C91C70029D600 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +124,7 @@
 		95298782215A159400F9681F /* vido_test */ = {
 			isa = PBXGroup;
 			children = (
+				95AB42E6215C97880029D600 /* include */,
 				95298783215A159400F9681F /* AppDelegate.h */,
 				95298784215A159400F9681F /* AppDelegate.m */,
 				95298786215A159400F9681F /* ViewController.h */,
@@ -79,6 +140,49 @@
 				952987A3215A468C00F9681F /* threadpool.h */,
 			);
 			path = vido_test;
+			sourceTree = "<group>";
+		};
+		95AB42D2215C91C70029D600 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95AB43E3215CE3550029D600 /* CoreMedia.framework */,
+				95AB43E1215CE34C0029D600 /* CoreGraphics.framework */,
+				95AB43DE215CE32C0029D600 /* libz.tbd */,
+				95AB43DC215CE31F0029D600 /* libiconv.tbd */,
+				95AB43DA215CE3110029D600 /* libbz2.tbd */,
+				95AB43D8215CE3050029D600 /* libiconv.2.4.0.tbd */,
+				95AB43BB215CDC160029D600 /* AudioToolbox.framework */,
+				95AB43B9215CDA580029D600 /* VideoToolbox.framework */,
+				95AB431D215CBBA30029D600 /* libavcodec.a */,
+				95AB4321215CBBA30029D600 /* libavdevice.a */,
+				95AB4323215CBBA30029D600 /* libavfilter.a */,
+				95AB431E215CBBA30029D600 /* libavformat.a */,
+				95AB4322215CBBA30029D600 /* libavutil.a */,
+				95AB431C215CBBA30029D600 /* libpostproc.a */,
+				95AB431F215CBBA30029D600 /* libswresample.a */,
+				95AB4320215CBBA30029D600 /* libswscale.a */,
+				95AB4324215CBBA30029D600 /* libx264.a */,
+				95AB42F1215C9C2A0029D600 /* libcurl.a */,
+				95AB42EA215C98220029D600 /* libx264.a */,
+				95AB42EF215C9C1B0029D600 /* libx264.a */,
+				95AB42D6215C96330029D600 /* libavcodec.a */,
+				95AB42D9215C96330029D600 /* libavdevice.a */,
+				95AB42DB215C96330029D600 /* libavfilter.a */,
+				95AB42D5215C96320029D600 /* libavformat.a */,
+				95AB42D7215C96330029D600 /* libavutil.a */,
+				95AB42D8215C96330029D600 /* libpostproc.a */,
+				95AB42DC215C96330029D600 /* libswresample.a */,
+				95AB42DA215C96330029D600 /* libswscale.a */,
+				95AB42D3215C91C80029D600 /* libx264.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95AB42E6215C97880029D600 /* include */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,16 +399,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D44KBQYQUN;
+				ENABLE_BITCODE = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu89;
+				"HEADER_SEARCH_PATHS[arch=*]" = /Users/sking/code/ios/video_yuv/vido_test/include;
 				INFOPLIST_FILE = vido_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/vido_test/libs";
+				"LIBRARY_SEARCH_PATHS[arch=*]" = /Users/sking/code/ios/video_yuv/vido_test/libs;
+				OTHER_LDFLAGS = "-lz";
 				PRODUCT_BUNDLE_IDENTIFIER = "king.vido-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = /Users/sking/code/ios/video_yuv/vido_test/include;
 			};
 			name = Debug;
 		};
@@ -312,16 +424,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D44KBQYQUN;
+				ENABLE_BITCODE = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu89;
+				"HEADER_SEARCH_PATHS[arch=*]" = /Users/sking/code/ios/video_yuv/vido_test/include;
 				INFOPLIST_FILE = vido_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/vido_test/libs";
+				OTHER_LDFLAGS = "-lz";
 				PRODUCT_BUNDLE_IDENTIFIER = "king.vido-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = /Users/sking/code/ios/video_yuv/vido_test/include;
 			};
 			name = Release;
 		};
