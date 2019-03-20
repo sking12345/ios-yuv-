@@ -1,2 +1,2 @@
 # ios-yuv-
-ios采集yuv视频上传都服务器
+ios采集yuv视频上传到服务器
